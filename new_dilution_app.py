@@ -55,7 +55,7 @@ def calculate():
                 result.insert(tk.END, f"\nFor Cdil = {w} ± {w*U:.0f} ppb, Vcal = {V:.3f} SCCM")
             result.insert(tk.END, "\n")
 
-root = tk.Toplevel()
+root = tk.Tk()
 root.title("Determination of the Volumetric Flow of the Cylinder of Air V3")
 root.geometry('1152x648')
 
@@ -67,7 +67,7 @@ def resize_image(event):
     label.config(image = photo)
     label.image = photo
     
-image = Image.open(r"C:\Users\GAYRARD\Documents\GitHub\Volumetric_Flow_Calculation\App_Dil_Bkr.png")
+image = Image.open("App_Dil_Bkr.png")
 copy_of_image = image.copy()
 photo = ImageTk.PhotoImage(image)
 label = ttk.Label(root, image = photo)
