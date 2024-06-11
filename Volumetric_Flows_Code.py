@@ -1,8 +1,8 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu May 23 14:26:19 2024
+#!/usr/bin/python3
+# author: Tristan Gayrard
 
-@author: GAYRARD
+"""
+Volumetric Flows App
 """
 
 import numpy as np
@@ -35,8 +35,9 @@ def calculate():
     wdil_C_array = wdil_array * 10**-9  # From ppb to nothing
 
     wGAS_val = wGAS_val * 10**-6  # From ppm to nothing
+    
+    Vdil = wdil_C_array/(wGAS_val - wdil_C_array) * Vair_val
 
-    Vdil = Vair_val * wdil_C_array / (wGAS_val - (1 - wGAS_val) * wdil_C_array)
     Vdil = Vdil * 1000  # From SLPM to SCCM
 
     percent_val = percent_val / 100
