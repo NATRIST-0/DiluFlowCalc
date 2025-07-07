@@ -24,7 +24,8 @@ DiluFlowCalc is a Python-based GUI tool designed to help researchers and lab tec
 
 ## Graphical User Interface
 
-![image](https://github.com/user-attachments/assets/80ed6dee-a349-4b08-be05-7a389d227b16)
+![image](https://github.com/user-attachments/assets/21087db5-97ae-4697-82ee-7e0e83aea63e)
+
 
 
 
